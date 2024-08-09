@@ -1,0 +1,504 @@
+/* Styles for both pages */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #8B4513; /* Coklat */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6F3F1B;
+}
+
+.page-2 .slide-show {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page-2 .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.page-2 .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-2 .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.page-2 .text-overlay h1,
+.page-2 .text-overlay h2,
+.page-2 .text-overlay p {
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.welcome, .bride, .groom, .quote {
+    margin-bottom: 40px;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    max-width: 300px;
+}
+
+.profile-info a img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.quote {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styles for the new section */
+
+.schedule {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.schedule h2,
+.schedule h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.event-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.schedule {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.schedule h2,
+.schedule h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.event-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Styles for Gallery section */
+.gallery {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.gallery h2,
+.gallery h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Styles for Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8); 
+    padding-top: 60px; 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Styles for Maps section */
+.maps {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.maps h2,
+.maps h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.map-container {
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.btn-map {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6f4f28; /* Coklat */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-map:hover {
+    background-color: #5a4321; /* Warna coklat lebih gelap untuk efek hover */
+}
+
+/* Styles for RSVP section */
+.rsvp {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.rsvp-box {
+    animation: slideIn 1s ease-out;
+}
+
+.rsvp h2,
+.rsvp h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-submit {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6f4f28; /* Coklat */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5a4321; /* Warna coklat lebih gelap untuk efek hover */
+}
+
+.messages-container {
+    margin-top: 20px;
+}
+
+.message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-load-more {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6f4f28; /* Coklat */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-load-more:hover {
+    background-color: #5a4321; /* Warna coklat lebih gelap untuk efek hover */
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Styles for Wedding Info section */
+.wedding-info {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.info-content {
+    animation: slideIn 1s ease-out;
+}
+
+.wedding-logo {
+    width: 100px; /* Atur sesuai ukuran logo Anda */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.wedding-info h2,
+.wedding-info h3 {
+    margin: 0;
+}
+
+/* Styles for Gift Section */
+.gift-section {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.gift-btn {
+    background-color: #6f4f28; /* Coklat */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.gift-form {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.gift-form h2 {
+    margin-top: 0;
+}
+
+.gift-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.gift-form input,
+.gift-form textarea,
+.gift-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    background-color: #6f4f28; /* Coklat */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Payment Info Styles */
+.payment-info {
+    margin-top: 10px;
+}
+
+
